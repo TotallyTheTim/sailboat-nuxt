@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <Banner />
-    <h1>welcome</h1>
+    <h1>welcome {{ title }}</h1>
   </div>
 </template>
 
@@ -9,8 +9,12 @@
 import Banner from '@/components/Banner'
 export default {
   name: 'Index',
-  components: { Banner }
+  components: { Banner },
+  data() {
+    return { title: 'test' }
+  }
 }
 </script>
 
-<style></style>
+<style>
+</style>
